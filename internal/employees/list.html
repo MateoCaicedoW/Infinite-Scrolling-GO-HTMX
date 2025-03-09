@@ -20,10 +20,10 @@
 <% } %>
 
 <!-- If there are more records to load, this div is rendered -->
-<!-- It triggers an HTMX request when it becomes visible at the bottom of the page -->
+ 
 <%= if (hasMoreRecords) { %>
     <!-- What does this do? -->
-      <!-- 1. Makes a HTMX request to load the next batch of employees -->
+      <!-- 1. Makes an HTMX request to load the next batch of employees -->
       <!-- 2. Uses the Intersection Observer API to detect when the div enters the viewport -->
       <!-- 3. Updates this div with the response from the server -->
       <!-- 4. Replaces the entire div with the new content -->
